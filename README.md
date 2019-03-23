@@ -2,6 +2,7 @@
 
 Makefile for compiling the libpam version of Google Authenticator for OpenWrt 18.06.2.
 
-You will need to know how to use the OpenWrt SDK for your target.
+OpenWrt SDK for the target is needed for compiling the binaries.
 
-And if you want to use Google Authenticator with SSH, you will need to compile the openssh-server-pam package and install this with the re-compiled dependencies.
+For using Google Authenticator with SSH, the openssh-server-pam package is needed.
+Caution: Login via SSH and Google Authenticator will not be possible after restart without internet access (without NTP update).
